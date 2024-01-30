@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chenyi Qian's Proj_1</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: "Lora", serif;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: sticky;
+        top: 0;
+      }
+
+      nav a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: inline-block;
+      }
+      .projects {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+      }
+      .project {
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid black;
+        aspect-ratio: 1/1;
+        border-radius: 8px;
+      }
+      footer {
+        text-align: center;
+        width: 100%;
+        margin-top: auto;
+      }
+      nav a:hover {
+        font-weight: bold;
+      }
+      @media only screen and (max-width: 600px) {
+        nav {
+          flex-direction: column;
+          align-items: center;
+          position: fixed;
+          bottom: 0;
+          top: auto;
+          right: 0;
+          height: 20vh;
+          z-index: 1000;
+        }
+        nav a {
+          border-bottom: 1px dashed black;
+        }
+        nav a:hover {
+          border-bottom: 1px solid black;
+        }
+        nav h1 {
+          display: none;
+        }
+        .projects {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body style="min-height: 100vh">
+    <nav>
+      <h1>Chenyi Qian</h1>
+      <a href="/"> Home</a>
+      <a
+        href="/project"
+        style="font-weight: bold; border-bottom: dashed 1px black"
+        >Project</a
+      >
+      <a href="/contact"> Contact</a>
+      <a href="/more"> More</a>
+    </nav>
+    <!-- list all the projects use grid -->
+    <div class="projects">
+      <div class="project">
+        <a href="http://www.github.com">
+          <img
+            src="../public/placeholder-image.png"
+            alt="p1"
+            style="height: 80px; width: 80px"
+          />
+        </a>
+
+        <div style="border-top: 1px dashed black; padding-top: 10px">
+          Project1
+        </div>
+      </div>
+
+      <div class="project">
+        <a href="http://www.github.com">
+          <img
+            src="../public/placeholder-image.png"
+            alt="p2"
+            style="height: 80px; width: 80px"
+          />
+        </a>
+        <div style="border-top: 1px dashed black; padding-top: 10px">
+          Project2
+        </div>
+      </div>
+      <div class="project">
+        <a href="http://www.github.com">
+          <img
+            src="../public/placeholder-image.png"
+            alt="p3"
+            style="height: 80px; width: 80px"
+          />
+        </a>
+        <div style="border-top: 1px dashed black; padding-top: 10px">
+          Project3
+        </div>
+      </div>
+      <div class="project">
+        <a href="http://www.github.com">
+          <img
+            src="../public/placeholder-image.png"
+            alt="p3"
+            style="height: 80px; width: 80px"
+          />
+        </a>
+        <div style="border-top: 1px dashed black; padding-top: 10px">
+          Project4
+        </div>
+      </div>
+      <div class="project">
+        <a href="http://www.github.com">
+          <img
+            src="../public/placeholder-image.png"
+            alt="p3"
+            style="height: 80px; width: 80px"
+          />
+        </a>
+        <div style="border-top: 1px dashed black; padding-top: 10px">
+          Project5
+        </div>
+      </div>
+    </div>
+    <footer>&copy; 2024 Chenyi Qian</footer>
+  </body>
+</html>

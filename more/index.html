@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chenyi Qian's Proj_1</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: "Lora", serif;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: sticky;
+        top: 0;
+      }
+
+      nav a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: inline-block;
+      }
+      nav a:hover {
+        font-weight: bold;
+      }
+      @media only screen and (max-width: 600px) {
+        nav {
+          background-color: rgb(255 255 255 / 0.75);
+          flex-direction: column;
+          align-items: center;
+          position: fixed;
+          bottom: 0;
+          top: auto;
+          right: 0;
+          height: 20vh;
+          z-index: 1000;
+        }
+        nav a {
+          border-bottom: 1px dashed black;
+        }
+        nav a:hover {
+          border-bottom: 1px solid black;
+        }
+        nav h1 {
+          display: none;
+        }
+      }
+      #photo {
+        flex-grow: 1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #photo img {
+        border-radius: 50%;
+        max-width: 100%;
+        height: auto;
+      }
+      #photo img:hover {
+        transform: scale(1.2);
+        transition: transform 0.5s;
+      }
+      footer {
+        text-align: center;
+        width: 100%;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <h1>Chenyi Qian</h1>
+      <a href="/"> Home</a>
+      <a href="/project">Project</a>
+      <a href="/contact"> Contact</a>
+      <a
+        href="/more"
+        style="font-weight: bold; border-bottom: dashed 1px black"
+      >
+        More</a
+      >
+    </nav>
+
+    <div id="photo">
+      <img
+        src="https://images.dog.ceo/breeds/boxer/n02108089_2953.jpg"
+        alt="Chenyi Qian"
+        width="200"
+      />
+      <div style="margin-top: 30px">Feel free to reach out to me!</div>
+    </div>
+
+    <footer>&copy; 2024 Chenyi Qian</footer>
+  </body>
+</html>

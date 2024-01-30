@@ -3,7 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Chenyi Qian's Proj_1</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: "Lora", serif;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: sticky;
+        top: 0;
+      }
+
+      nav a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: inline-block;
+      }
+      nav a:hover {
+        font-weight: bold;
+      }
+      @media only screen and (max-width: 600px) {
+        nav {
+          background-color: rgb(255 255 255 / 0.75);
+          flex-direction: column;
+          align-items: center;
+          position: fixed;
+          bottom: 0;
+          top: auto;
+          right: 0;
+          height: 20vh;
+          z-index: 1000;
+        }
+        nav a {
+          border-bottom: 1px dashed black;
+        }
+        nav a:hover {
+          border-bottom: 1px solid black;
+        }
+        nav h1 {
+          display: none;
+        }
+      }
+      #about,
+      #experience,
+      #education {
+        margin: 0 auto 20px;
+        width: 80%;
+        text-align: center;
+      }
+      .card {
+        border: 1px solid #ddd;
+        padding: 20px;
+        text-align: left;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        text-align: center;
+        width: 100%;
+        margin-top: auto;
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body>
+    <nav>
+      <h1>Chenyi Qian</h1>
+      <a href="/" style="font-weight: bold; border-bottom: dashed 1px black">
+        Home</a
+      >
+      <a href="/project">Project</a>
+      <a href="/contact"> Contact</a>
+      <a href="/more"> More</a>
+    </nav>
+    <section id="about">
+      <h1>Welcome to My Personal Landing Page</h1>
+      <p>
+        Hello! I'm Chenyi Qian, a passionate individual with a background in
+        software engineering. This is my personal landing page where you can
+        learn more about me, my experience, and education.
+      </p>
+
+      <p>
+        I am currently a graduate student at the University of Northeastern,
+        majoring in Computer Science. I am interested in software engineering,
+        specially full-stack development. I am actively looking for full-time
+        opportunities as sde.
+      </p>
+    </section>
+
+    <!-- Add sections for experience, education, contact, etc. -->
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>Job Title 1</h3>
+        <p>Company Name</p>
+        <p>Duration: Month Year - Month Year</p>
+        <p>Description of responsibilities and achievements in this role.</p>
+      </div>
+      <!-- Add more experience cards as needed -->
+    </section>
+
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Degree Program 1</h3>
+        <p>University Name</p>
+        <p>Graduation Year: Year</p>
+      </div>
+      <!-- Add more education cards as needed -->
+    </section>
+
+    <footer>&copy; 2024 Chenyi Qian</footer>
+  </body>
 </html>

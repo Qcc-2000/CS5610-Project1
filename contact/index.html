@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chenyi Qian's Proj_1</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: "Lora", serif;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: sticky;
+        top: 0;
+      }
+
+      nav a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: inline-block;
+      }
+      nav a:hover {
+        font-weight: bold;
+      }
+      @media only screen and (max-width: 600px) {
+        nav {
+          flex-direction: column;
+          align-items: center;
+          position: fixed;
+          bottom: 0;
+          top: auto;
+          right: 0;
+          height: 20vh;
+          z-index: 1000;
+        }
+        nav a {
+          border-bottom: 1px dashed black;
+        }
+        nav a:hover {
+          border-bottom: 1px solid black;
+        }
+        nav h1 {
+          display: none;
+        }
+      }
+      #contact {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      footer {
+        margin-top: auto;
+        text-align: center;
+        width: 100%;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+
+        table-layout: fixed;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Chenyi Qian</h1>
+      <a href="/"> Home</a>
+      <a href="/project">Project</a>
+      <a
+        href="/contact"
+        style="font-weight: bold; border-bottom: dashed 1px black"
+      >
+        Contact</a
+      >
+      <a href="/"> More</a>
+    </nav>
+    <div id="contact">
+      <table>
+        <thead>
+          <tr>
+            <th>Contact Type</th>
+            <th>Contact Information</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Email</td>
+            <td>example.email@example.com</td>
+          </tr>
+          <tr>
+            <td>Phone Number</td>
+            <td>(123) 456-7890</td>
+          </tr>
+          <tr>
+            <td>Github</td>
+            <td>www.example.github.com</td>
+          </tr>
+          <tr>
+            <td>Linkedin</td>
+            <td>www.linkedin.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <footer>&copy; 2024 Chenyi Qian</footer>
+  </body>
+</html>
