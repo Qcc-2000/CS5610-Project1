@@ -1,0 +1,19 @@
+#contact {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+
+  table-layout: fixed;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}

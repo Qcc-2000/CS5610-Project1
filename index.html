@@ -4,85 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chenyi Qian's Proj_1</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
-      body {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        font-family: "Lora", serif;
-      }
-      nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        position: sticky;
-        top: 0;
-        background-color: rgb(255 255 255 / 0.75);
-      }
 
-      nav a {
-        color: black;
-        text-decoration: none;
-        padding: 10px 15px;
-        display: inline-block;
-      }
-      nav a:hover {
-        font-weight: bold;
-      }
-      @media only screen and (max-width: 600px) {
-        nav {
-          background-color: rgb(255 255 255 / 0.75);
-          flex-direction: column;
-          align-items: center;
-          position: fixed;
-          bottom: 0;
-          top: auto;
-          right: 0;
-          height: 20vh;
-          z-index: 1000;
-        }
-        nav a {
-          border-bottom: 1px dashed black;
-        }
-        nav a:hover {
-          border-bottom: 1px solid black;
-        }
-        nav h1 {
-          display: none;
-        }
-      }
-      #about,
-      #experience,
-      #education {
-        margin: 0 auto 20px;
-        width: 80%;
-        text-align: center;
-      }
-      .card {
-        border: 1px solid #ddd;
-        padding: 20px;
-        text-align: left;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      footer {
-        text-align: center;
-        width: 100%;
-        margin-top: auto;
-      }
-    </style>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="common.css" />
   </head>
-
+  <style></style>
   <body>
     <nav>
       <h1>Chenyi Qian</h1>
-      <a
-        href="/CS5610-Project1"
-        style="font-weight: bold; border-bottom: dashed 1px black"
-      >
-        Home</a
-      >
+      <a href="/CS5610-Project1" class="nav-focus"> Home</a>
       <a href="/CS5610-Project1/project">Project</a>
       <a href="/CS5610-Project1/contact"> Contact</a>
       <a href="/CS5610-Project1/more"> More</a>

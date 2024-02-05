@@ -1,0 +1,31 @@
+.projects {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.project {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+}
+.project-desc {
+  border-top: 1px dashed black;
+  padding-top: 10px;
+}
+
+.project-display-img {
+  height: 150px;
+  width: 150px;
+}
+@media only screen and (max-width: 600px) {
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
