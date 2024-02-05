@@ -2,4 +2,4 @@
 
 Todo
 
-- [] clean up the css
+- [x] clean up the css
